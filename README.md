@@ -1,150 +1,142 @@
-\# 🎵 Music Mood Recommendation System
 
-\*\*University Project\*\*
-
+# 🎵 Music Mood Recommendation System
 
 
-\## 📌 Overview
+## 📌 Overview
 
-The Music Mood Recommendation System is an AI-based application that detects a user’s facial emotion from an uploaded image and recommends music that matches the detected mood.
+The **Music Mood Recommendation System** is an AI-based application that analyzes a user’s facial expression from an uploaded image, predicts the emotional state, generates a natural language description of the emotion, and recommends a suitable song that matches the detected mood.
 
-
-
-This project was developed as part of a university coursework to demonstrate practical applications of computer vision, deep learning, and recommendation systems.
-
-
+This project demonstrates the integration of **computer vision**, **deep learning**, and **emotion-aware recommendation systems**.
 
 ---
 
+## 🖼️ System Interface
 
+The following screenshot shows the full system pipeline, including emotion prediction, probability scores, emotion description generation, and music recommendation.
 
-\## 🎯 Objectives
-
-\- Detect facial emotions from images
-
-\- Classify emotions with probability scores
-
-\- Generate a textual description of emotions
-
-\- Recommend music based on detected mood
-
-\- Provide an interactive web-based interface
-
-
+![System Interface](Interface.png)
 
 ---
 
+## 🎯 Project Objectives
 
+* Detect and crop faces from uploaded images
+* Classify facial emotions into:
 
-\## 🚀 Features
-
-\- Upload a face image
-
-\- Automatic face detection and cropping
-
-\- Emotion classification (e.g., Happy, Neutral)
-
-\- Emotion probability display
-
-\- Emotion description generation
-
-\- Music recommendation with embedded YouTube player
-
-
+  * Happy
+  * Sad
+  * Neutral
+* Display emotion probability scores
+* Generate a textual description of the detected emotion
+* Recommend a mood-based song using an embedded YouTube player
 
 ---
 
+## 🧠 System Workflow
 
-
-\## 🧠 System Workflow
-
-1\. Image Upload
-
-2\. Face Detection
-
-3\. CNN-based Emotion Classification
-
-4\. Probability Estimation
-
-5\. Emotion Description Generation
-
-6\. Mood-Based Music Recommendation
-
-
+```
+Image Upload
+   ↓
+Face Detection & Cropping
+   ↓
+CNN Emotion Classification (Happy / Sad / Neutral)
+   ↓
+Emotion Probability Estimation
+   ↓
+Emotion Description Generation
+   ↓
+Music Recommendation
+```
 
 ---
 
+## 🧪 Dataset
 
-
-\## 🛠️ Technologies Used
-
-\- Python
-
-\- Convolutional Neural Networks (CNN)
-
-\- OpenCV
-
-\- Encoder / Decoder architecture
-
-\- Gradio (Web Interface)
-
-\- NumPy, Pandas
-
-
+* **RAF-DB (Real-world Affective Faces Database)**
+* Used for training the emotion recognition model
+* Simplified to three emotion classes for robustness and clarity
 
 ---
 
+## 🧠 Model Description
 
+### Emotion Recognition
 
-\## ▶️ How to Run
+* Convolutional Neural Network (CNN)
+* Extracts facial features and predicts emotion class probabilities
 
-1\. Open the notebook:
+### Emotion Description Generation
 
-2\. Install required libraries
+* Decoder-only neural model
+* Produces a short natural language description of the detected emotion
 
-3\. Run all cells
+### Music Recommendation
 
-4\. Upload a face image through the interface
-
-
-
----
-
-
-
-\## 🎓 Academic Context
-
-\- Project Type: University Project
-
-\- Domain: Artificial Intelligence / Machine Learning
-
-
+* Each emotion is mapped to a predefined set of songs
+* Recommended song is displayed using a YouTube embedded player
 
 ---
 
+## 🛠️ Technologies Used
 
-
-\## 🔮 Future Enhancements
-
-\- Real-time webcam emotion detection
-
-\- More emotion categories
-
-\- Personalized music recommendation
-
-\- Spotify API integration
-
-
+* Python
+* Convolutional Neural Networks (CNN)
+* OpenCV
+* Decoder-only text generation model
+* Gradio (Web Interface)
+* NumPy, Pandas
+* YouTube Embed
 
 ---
 
+## ▶️ How to Run the Project
+
+1. Open the notebook:
+
+   ```
+   Music_Mood.ipynb
+   ```
+2. Install required Python libraries if needed
+3. Run all notebook cells
+4. Upload a face image using the interface
+
+---
+
+## 📊 Output Example
+
+* **Predicted Emotion:** Happy
+* **Emotion Probabilities:** Displayed numerically
+* **Generated Description:** Textual explanation of facial expression
+* **Music Recommendation:** Mood-matching song
+
+---
+
+## 🎓 Academic Context
+
+* **Topics Covered:**
+
+  * Computer Vision
+  * Neural Networks
+  * Emotion Recognition
+  * Recommendation Systems
+
+---
+
+## 🔮 Future Improvements
+
+* Real-time webcam emotion detection
+* Additional emotion categories
+* Personalized music recommendations
+* Spotify API integration
+
+---
+
+## 👤 Authors
+- **Salma Yasser Galal** — 211006565  
+- **Jayan Ahmed Samer** — 211005353  
+- **Zeina Ahmed ElShenawy** — 211007926  
 
 
-\## 👤 Author
-
-\*\*Jayan Ahmed Samer\*\*
-
-
-
+---
 
 

@@ -201,7 +201,7 @@ Configure Kaggle API access:
 
 ## Running the Project
 
-1. Open `Mood.ipynb`
+1. Open `Music_Mood.ipynb`
 2. Run all notebook cells sequentially
 3. Launch the Gradio application:
 
